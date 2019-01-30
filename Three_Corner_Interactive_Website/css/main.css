@@ -1,0 +1,453 @@
+*{
+  box-sizing: border-box;
+  background-color: rgb(26, 26, 26);
+}
+
+.element-container {
+  display:flex;
+  width: 100%;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+}
+
+.element-container-col{
+  display:flex;
+  width: 100%;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  background: #ffd000;
+}
+
+.element-section {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: white;
+}
+
+.container-border{
+  border: solid;
+  border-color: white;
+  margin: 10px;
+}
+
+
+code {
+  background-color: #EEE;
+  max-width: 40%;
+  color: black;
+  padding: 0.5rem;
+  display: block;
+}
+
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0px;
+  color: white;
+}
+
+label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+}
+
+ul{
+  font-size: 1.2rem;
+}
+
+.nav-main{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  background-color: #ffd000;
+  z-index: 1;
+}
+
+.nav-main-sample{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  background-color: #ffd000;
+  z-index: 1;
+}
+
+
+.nav-main-items{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  flex-direction: row;
+  flex-basis: 15%;
+  color:black;
+  background-color: #ffd000;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: flex-end;
+  z-index: 1;
+  transition-property: background-color;
+  transition-duration: 0.75s;
+}
+
+.nav-main-items:hover, .nav-main-items:focus {
+  background-color: #8f7500;
+  color: white;
+}
+
+.nav-sample{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  flex-direction: row;
+  flex-basis: 15%;
+  color:black;
+  background-color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-align: center;
+  justify-content: flex-end;
+  z-index: 1;
+  transition-property: background-color;
+  transition-duration: 0.75s;
+}
+
+.nav-sample:hover, .nav-sample:focus {
+  background-color: #8f7500;
+  color: white;
+}
+
+.in-text-nav{
+  color:#ffd000;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.in-text-nav:hover, .in-text-nav:focus{
+  color: white;
+}
+
+.header-banner{
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+}
+
+.overlay-banner{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 720px;
+}
+
+.banner-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffd000;
+  text-align: left;
+}
+
+.inline-bottom-left-text {
+  position: absolute;
+  background-color: transparent;
+  top: 25%;
+  left: 25%;
+  max-width: 40em;
+  text-decoration-line: underline;
+  color: #ffd000;
+  transform: translate(-50%, -50%);
+}
+
+.header-contents{
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffd000;
+  text-decoration: #ffd000;
+  text-decoration-line: underline;
+  font-size: 2rem;
+}
+
+.sub-header-contents{
+  display: flex;
+  margin: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffd000;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.justify-body-content{
+  display: flex;
+  flex-basis: 30%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
+  font-size: 1.2rem;
+  color: white;
+  background: transparent;
+}
+
+.justify-centered-body-content{
+  display: flex;
+  flex-basis: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  background: transparent;
+}
+
+.img-body-banner{
+  width: 100%;
+  height: 480px;
+  box-shadow: 0px 0px 5px grey;
+  object-fit: cover;
+}
+
+.contract-thumbnail{
+  display: flex;
+  flex-basis: 33.33%;
+  padding-left: 2%;
+  padding-right: 2%;
+  justify-content: space-evenly;
+  border: solid;
+  border-color: #ffd000;
+}
+
+.contract-img-thumbnail{
+  display: flex;
+  flex-basis: 100%;
+  box-shadow: 0px 0px 5px grey;
+  object-fit: cover;
+}
+
+.project-thumbnail-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.project-thumbnail{
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 5px grey;
+  object-fit: cover;
+  transition-duration: 0.8s;
+}
+
+#project-flower:hover, #project-flower:focus{
+  height: 50%;
+  display: inline-block;
+  background: #ffd000;
+}
+
+#project-bunker:hover, #project-bunker:focus{
+  height: 50%;
+  display: inline-block;
+  background: #ffd000;
+}
+
+#project-hio:hover, #project-hio:focus{
+  height: 50%;
+  display: inline-block;
+  background: #ffd000;
+}
+
+.label-justify-content{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  margin: 10px;
+  color: black;
+}
+
+.label-container{
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-items: center;
+  color: white;
+}
+
+.text-input{
+  width: 10rem;
+  height: 2rem;
+  background-color: white;
+  border: none;
+}
+
+.message-box{
+  width: 40rem;
+  height: 20rem;
+  justify-content: space-evenly;
+  background-color: white;
+  border: none;
+}
+
+.nav-button{
+  width: 15em;
+  height: 5em;
+  color: white;
+  background-color: black;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.nav-button-text{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 8px;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.submit-reset-button{
+  width: 10em;
+  height: 3em;
+  color: white;
+  background-color: rgb(26, 26, 26);;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.nav-button:hover, .nav-button:focus, .submit-reset-button:hover, .submit-reset-button:focus{
+  background-color: #8f7500;
+  color: white;
+}
+
+.empty-block{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background-color: transparent;
+}
+
+.service-container{
+  display: flex;
+  flex-basis: 33.33%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
+  font-size: 1.2rem;
+  color: black;
+  background: #ffd000;
+}
+
+#fineline{
+  font-weight: bold;
+}
+
+.footer{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em;
+  background-color: #ffd000;
+  text-align: center;
+}
+
+@Media (max-width: 32em){
+
+  .element-container{
+      justify-content: center;
+      flex-basis: 20%;
+  }
+
+  .element-container-col{
+    width: 100%;
+  }
+
+  .label-justify-content{
+    padding: 0px;
+  }
+
+  .message-box{
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-button{
+    width: 100%;
+    height: 100%;
+  }
+
+  .submit-reset-button{
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-sample{
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay-banner{
+    height: 380px;
+  }
+
+
+  .justify-body-content{
+      flex-basis: 100%;
+      width: auto;
+  }
+
+  .justify-centered-body-content{
+      flex-basis: 100%;
+      width: auto;
+      text-align: left;
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+
+  .justify-left-header-content{
+      flex-basis: 100%;
+      width: auto;
+      text-align: center;
+  }
+
+  .inline-bottom-left-text{
+      flex-basis: 100%;
+      width: auto;
+      top: 20%;
+      left: 25%;
+      max-width: 10em;
+  }
+
+  .banner-text{
+      font-size: 1rem;
+  }
+  
+  .header-banner{
+      flex-basis: 100%;
+      width: 100%;
+      padding-top: 25%;
+      height: auto;
+  }
+
+  .body-banner{
+      flex-basis: 100%;
+      width: 100%;
+      height: 20%;
+  }
+
+  .project-thumbnail{
+      flex-basis: 100%;
+      width: 80%;
+      height: 80%;
+  }
+
+  .container-border{
+    width: auto;
+  }
+}
+
+/* Extra programming help from: https://www.w3schools.com/
+All images used are originals */
