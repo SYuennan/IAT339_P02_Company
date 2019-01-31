@@ -1,0 +1,114 @@
+.nav-main{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    background-color: #ffd000;
+    z-index: 1;
+  }
+  
+  .nav-main-sample{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    background-color: #ffd000;
+    z-index: 1;
+  }
+  
+  
+  .nav-main-items{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-direction: row;
+    flex-basis: 15%;
+    color:black;
+    background-color: #ffd000;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: flex-end;
+    z-index: 1;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+  }
+  
+  .nav-main-items:hover, .nav-main-items:focus {
+    background-color: #8f7500;
+    color: white;
+  }
+  
+  .nav-sample{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    flex-direction: row;
+    flex-basis: 15%;
+    color:black;
+    background-color: white;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: flex-end;
+    z-index: 1;
+    transition-property: background-color;
+    transition-duration: 0.75s;
+  }
+  
+  .nav-sample:hover, .nav-sample:focus {
+    background-color: #8f7500;
+    color: white;
+  }
+  
+  .in-text-nav{
+    color:#ffd000;
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+  
+  .in-text-nav:hover, .in-text-nav:focus{
+    color: white;
+  }
+
+  .text-input{
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    border: none;
+  }
+  
+  .message-box{
+    width: 40rem;
+    height: 20rem;
+    justify-content: space-evenly;
+    background-color: white;
+    border: none;
+  }
+  
+  .nav-button{
+    width: 15em;
+    height: 5em;
+    color: white;
+    background-color: black;
+    border: none;
+    transition-duration: 0.5s;
+  }
+  
+  .nav-button-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .submit-reset-button{
+    width: 10em;
+    height: 3em;
+    color: white;
+    background-color: rgb(26, 26, 26);;
+    border: none;
+    transition-duration: 0.5s;
+  }
+  
+  .nav-button:hover, .nav-button:focus, .submit-reset-button:hover, .submit-reset-button:focus{
+    background-color: #8f7500;
+    color: white;
+  }
