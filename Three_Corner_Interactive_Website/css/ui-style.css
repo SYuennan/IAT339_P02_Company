@@ -3,6 +3,7 @@
     flex-direction: row;
     position: fixed;
     width: 100%;
+    margin: 0px;
     background-color: #ffd000;
     z-index: 1;
   }

@@ -73,7 +73,7 @@
   text-align: center;
 }
 
-@Media (max-width: 42em){
+@Media (max-width: 48em){
 
   .element-container{
       justify-content: center;
@@ -108,11 +108,6 @@
     height: 100%;
   }
 
-  .overlay-banner{
-    height: 330px;
-  }
-
-
   .justify-body-content{
       flex-basis: 100%;
       width: auto;
@@ -135,7 +130,7 @@
   .inline-bottom-left-text{
       flex-basis: 100%;
       width: auto;
-      top: 20%;
+      top: 15%;
       left: 25%;
       max-width: 10em;
   }
@@ -145,16 +140,18 @@
   }
   
   .header-banner{
-      flex-basis: 100%;
       width: 100%;
-      padding-top: 25%;
-      height: auto;
+      height: 20rem;
   }
 
-  .body-banner{
-      flex-basis: 100%;
-      width: 100%;
-      height: 20%;
+  .overlay-banner{
+    width: 100%;
+    height: 20rem;
+  }
+
+  .img-body-banner{
+    width: 100%;
+    height: 20rem;
   }
 
   .project-thumbnail{
@@ -165,6 +162,10 @@
 
   .container-border{
     width: auto;
+  }
+
+  .imageGrid{
+    flex-basis: 100%;
   }
 }
 
