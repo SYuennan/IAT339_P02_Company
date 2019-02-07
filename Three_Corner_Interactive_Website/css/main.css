@@ -75,10 +75,10 @@
 
 @Media (max-width: 32em){
 
-  .element-container{
+  /* .element-container{
       justify-content: center;
       flex-basis: 20%;
-  }
+  } */
 
   .element-container-col{
     width: 100%;
