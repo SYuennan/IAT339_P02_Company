@@ -62,7 +62,7 @@
   }
 
   .project-thumbnail-name{
-    display: flex;
+    display: none;
     position: absolute;
     text-align: center;
     background-color: transparent;
@@ -80,19 +80,16 @@
   }
 
   #project-flower:hover, #project-flower:focus{
-    height: 50%;
-    color: black;
+    display: inline-block;
     background: #ffd000;
   }
   
   #project-bunker:hover, #project-bunker:focus{
-    height: 50%;
     display: inline-block;
     background: #ffd000;
   }
   
   #project-hio:hover, #project-hio:focus{
-    height: 50%;
     display: inline-block;
     background: #ffd000;
   }
