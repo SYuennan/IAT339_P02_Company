@@ -1,100 +1,129 @@
-  body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0px;
-    color: white;
-  }
-  
-  label{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-  }
-  
-  ul{
-    font-size: 1.2rem;
-  }
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0px;
+  color: white;
+}
 
-  .banner-text{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-    font-size: 3rem;
-    color: #ffd000;
-    text-align: left;
-  }
-  
-  .inline-bottom-left-text {
-    position: absolute;
-    background-color: transparent;
-    top: 25%;
-    left: 25%;
-    max-width: 40em;
+label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+}
 
-    color: #ffd000;
-    transform: translate(-50%, -50%);
-  }
+ul{
+  font-size: 1.2rem;
+}
 
-  
+.banner-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffd000;
+  text-align: left;
+}
+
+.inline-bottom-left-text {
+  position: absolute;
+  background-color: transparent;
+  top: 25%;
+  left: 25%;
+  max-width: 40em;
+  text-decoration-line: underline;
+  color: #ffd000;
+  transform: translate(-50%, -50%);
+}
+
+
 .header-contents{
-    display: flex;
-    justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffd000;
-    text-decoration: #ffd000;
+  display: flex;
+  justify-content: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffd000;
+  text-decoration: #ffd000;
+  text-decoration-line: underline;
+  font-size: 2rem;
+}
 
-    font-size: 2rem;
-  }
-  
-  .sub-header-contents{
-    display: flex;
-    margin: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffd000;
+.sub-header-contents{
+  display: flex;
+  margin: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffd000;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
 
-    font-size: 1.5rem;
-  }
-  
-  .justify-body-content{
-    display: flex;
-    flex-basis: 33%;
-    padding-left: 2%;
-    padding-right: 2%;
-    text-align: left;
-    font-size: 1.2rem;
-    color: white;
-    background: transparent;
-  }
-  
-  .justify-centered-body-content{
-    display: flex;
-    flex-basis: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
-    text-align: left;
-    font-size: 1.2rem;
-    color: white;
-    background: transparent;
-  }
+.justify-body-content{
+  display: flex;
+  flex-basis: 33%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
+  font-size: 1.2rem;
+  color: white;
+  background: transparent;
+}
 
-  
+.justify-centered-body-content{
+  display: flex;
+  flex-basis: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: left;
+  font-size: 1.2rem;
+  color: white;
+  background: transparent;
+}
+
+
+/* .label-justify-content{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  margin: 10px;
+  color: black;
+} */
 .label-justify-content{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-    font-size: 1.2rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
-    margin: 10px;
-    color: black;
-  }
-  @media only screen and (max-width: 768px) {
-    .justify-body-content {
-      flex-basis: 85%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .justify-centered-body-content{
-      padding-left: 7.5%;
-      padding-right: 7.5%;
-    }
-  }
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  font-size: 1.2rem;
+  display: block;
 
 
+}
+.service-justify-content-1{
+  flex-basis: 50%;
+  padding: 2em;
+
+
+}
+.service-justify-content-2{
+  flex-basis: 50%;
+  padding: 2em;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  .justify-body-content {
+    flex-basis: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .justify-centered-body-content{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+  .service-justify-content-1{
+    flex-basis: 100%;
+    padding: 2em;
   
+  }
+  .service-justify-content-2{
+    flex-basis: 100%;
+    padding: 2em;
+  
+  }
+
+}
