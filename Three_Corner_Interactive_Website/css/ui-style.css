@@ -70,34 +70,33 @@
 
   .text-input{
     border-radius: 10px;
-    width: 10rem;
+    max-width: 40rem;
     height: 2rem;
     background-color: white;
     border: none;
   }
-  
-  .message-box{
-    border-radius: 10px;
+
+  input[type=text] {
     width: 100%;
-    height: 20rem;
-    justify-content: space-evenly;
-    background-color: white;
-    border: none;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
   }
   
   .nav-button{
+    flex-basis: 100%;
     border-radius: 10px;
-    width: 15em;
-    height: 5em;
+    width: 25em;
     color: white;
     background-color: black;
     border: none;
+    box-shadow: 0px 0px 10px black;
     transition-duration: 0.5s;
   }
   
   .nav-button-text{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 8px;
+    padding: 15px;
     text-decoration: none;
     vertical-align: middle;
     text-align: center;

@@ -46,7 +46,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   .project-thumbnail{
     width: 100%;
     height: 100%;
@@ -69,27 +69,10 @@
   }
 
   .project-overlay{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    bottom: 0%;
-    right: 0%;
     background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
   }
 
-  #project-flower:hover, #project-flower:focus{
-    display: inline-block;
-    background: #ffd000;
-  }
-  
-  #project-bunker:hover, #project-bunker:focus{
-    display: inline-block;
-    background: #ffd000;
-  }
-  
-  #project-hio:hover, #project-hio:focus{
+  .project-thumbnail:hover, .project-thumbnail:focus{
     display: inline-block;
     background: #ffd000;
   }
