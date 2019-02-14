@@ -1,3 +1,5 @@
+
+
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0px;
@@ -89,8 +91,64 @@ ul{
   background-color: transparent;
   font-size: 1.2rem;
   display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5%;
+
+  margin-top: 1em;
+  user-select: none;
+}
+.label-justify-content input{
+  display: none;
 
 
+}
+/* .element-container-col h3{
+  text-align: center;
+  font-weight: bold;
+
+
+} */
+.service-type{
+  text-align: center;
+}
+
+.label-justify-content .checkmark{
+  display:inline-block;
+  width: 1em;
+  height: 1em;
+  background: lightgray;
+  position: absolute;
+  left:0;
+  top: 0;
+  border-radius: 3px;
+
+}
+
+
+.label-justify-content input:checked + .checkmark{
+  background: blue;
+
+}
+.label-justify-content:hover .checkmark{
+  background: darkblue;
+
+}
+.label-justify-content input:checked + .checkmark:after{
+  content:"";
+  position: absolute;
+  height: 4px;
+  width: 9px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  top: 45%;
+  left: 50%;
+  transform:translate(-50%,-50%) rotate(-45deg);
+
+
+}
+.checkmark{
+  margin-right: 5%;
 }
 .service-justify-content-1{
   flex-basis: 50%;
@@ -104,6 +162,7 @@ ul{
 
 
 }
+
 
 @media only screen and (max-width: 768px) {
   .justify-body-content {
@@ -124,6 +183,12 @@ ul{
     flex-basis: 100%;
     padding: 2em;
   
+  }
+  .label-justify-content{
+
+    padding-left: 8%;
+  
+
   }
 
 }
