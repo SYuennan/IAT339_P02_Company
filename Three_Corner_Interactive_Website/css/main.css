@@ -85,7 +85,6 @@
     left: 19rem;
 }
 }
-
 @media only screen and (max-width: 870px) {
 
   .element-container{
@@ -189,6 +188,7 @@
 
   .imageGrid{
     flex-basis: 100%;
+    height: 100%;
   }
 
   .justify-body-content {
