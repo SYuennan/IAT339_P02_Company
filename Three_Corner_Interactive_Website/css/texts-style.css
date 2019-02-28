@@ -84,7 +84,7 @@ ul{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: transparent;
   font-size: 1.2rem;
-  padding: 5px;
+  /* padding: 5px; */
   color: white;
 }
 
@@ -95,7 +95,7 @@ ul{
   display: block;
   cursor: pointer;
   position: relative;
-  padding-left: 5%;
+  padding-left: 7%;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   user-select: none;
@@ -160,4 +160,17 @@ ul{
   border: 10px;
   border-color: white;
   box-shadow: 0px 0px 10px black;
+}
+#payment-button{
+  text-align: center;
+  padding-right: 7%;
+}
+#payment-form{
+  max-width: 650px;
+}
+.image-description{
+
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

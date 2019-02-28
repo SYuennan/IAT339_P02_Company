@@ -164,7 +164,7 @@
 
   .overlay-banner{
     width: 100%;
-    height: 20rem;
+    height: 23rem;
   }
 
   .img-body-banner{
@@ -211,7 +211,14 @@
   textarea{
     width: 100%;
   }
+  .project-thumbnail-content {
+    top: 75%;
+  }
 
+
+}
+form{
+  background: #424242;
 }
 
 
