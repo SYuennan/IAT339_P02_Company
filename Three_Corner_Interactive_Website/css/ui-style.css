@@ -70,8 +70,8 @@
 
   .text-input{
     border-radius: 10px;
-    max-width: 40rem;
     height: 2rem;
+    max-width: 37rem;
     background-color: white;
     border: none;
   }
@@ -79,7 +79,7 @@
   input[type=text] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 20px;
     box-sizing: border-box;
   }
   

@@ -38,6 +38,7 @@ ul{
 .header-contents{
   display: flex;
   justify-content: center;
+  background-color: transparent;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #ffd000;
   text-decoration: #ffd000;
@@ -95,8 +96,8 @@ ul{
   cursor: pointer;
   position: relative;
   padding-left: 5%;
-
-  margin-top: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
   user-select: none;
 }
 .label-justify-content input{
