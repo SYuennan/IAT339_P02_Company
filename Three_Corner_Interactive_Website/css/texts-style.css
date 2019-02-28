@@ -174,3 +174,13 @@ ul{
   font-size: 1.2rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.justify-footer-content{
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: left;
+  font-size: 0.5rem;
+  color: black;
+  background: transparent;
+  letter-spacing: 2px;
+}
