@@ -3,79 +3,99 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Corner Interactives</title>
-    <link rel="stylesheet" href="css/texts-style.css">
-    <link rel="stylesheet" href="css/image-style.css">
-    <link rel="stylesheet" href="css/ui-style.css">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Corner Interactives</title>
+  <link rel="stylesheet" href="css/texts-style.css">
+  <link rel="stylesheet" href="css/image-style.css">
+  <link rel="stylesheet" href="css/ui-style.css">
+  <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
 
-    <nav class="element-container nav-main">
-        <a href="#the-studio" class="nav-main-items">The Studio</a>
-        <a href="#projects" class="nav-main-items">Projects</a>
-        <a href="#contract" class="nav-main-items">Contract</a>
-        <a href="#requests" class="nav-main-items">Requests</a>
-        <a href="index.html" class="nav-main-items">Style Guide</a>
-    </nav>
+  <nav class="nav-main">
+    <a href="Index.html" class="nav-main-items">Home</a>
+    <a href="Index.html#the-studio" class="nav-main-items">The Studio</a>
+    <a href="Index.html#projects" class="nav-main-items">Projects</a>
+    <a href="service.html" class="nav-main-items">Services</a>
+    <a href="contact.html" class="nav-main-items">Contact Us</a>
+  </nav>
 
 
-    <div class="overlay-banner"> </div>
-    <img src="Resources/Project-Flower.png" class="header-banner" alt="main-banner">
+  <div class="overlay-banner"> </div>
+  <img src="Resources/Project-Flower.png" class="header-banner" alt="main-banner">
 
-    <div class="inline-bottom-left-text">
-        <p class="banner-text">
-            Three Corner Interactives
-        </p>
-    </div>
+  <div class="inline-bottom-left-text">
+    <p class="banner-text">
+      Three Corner Interactives
+    </p>
+  </div>
 
-
+  <section class="service-offer">
     <h1 class="element-container header-contents">Payment</h1>
 
-    <div class="element-container-col label-container">
-      <label class="label-justify-content">Billing Address </label>
-      <div class="label-justify-content">
-        <input type="text" class="text-input" placeholder="Address Line 1">
-        <input type="text" class="text-input" placeholder="Address Line 2">
-      </div>
-      <label for="postalcode" class="label-justify-content">Postal Code </label>
-      <div class="label-justify-content">
-        <input type="text" class="text-input" id="postalcode" placeholder="Postal Code">
-      </div>
-      <div class="label-justify-content">
-        <label for="card-number"> <input type="text" id="card-number" class="text-input" placeholder="Card Number">
-          Card
-          Number</label>
-        <label for="card-ccv"> <input type="text" id="card-ccv" class="text-input" placeholder="CCV"> CCV</label>
-      </div>
-      <label for="first-name" class="label-justify-content"> <input type="text" id="first-name" class="text-input"
-          placeholder="First name">
-        First Name</label>
-      <label for="last-name" class="label-justify-content"> <input type="text" id="last-name" class="text-input"
-          placeholder="Last name">
-        Last Name</label>
-      <div class="label-justify-content">
-        <label for="mobile-payment"> <input type="radio" id="mobile-payment"> Mobile</label>
-        <label for="work-payment"> <input type="radio" id="work-payment"> Work</label>
-        <label for="home-payment"> <input type="radio" id="home-payment"> Home</label>
-      </div>
-      <label for="tel-payment" class="label-justify-content"> <input type="text" id="tel-payment" class="text-input"
-          placeholder="Contact Number">
-        Tel</label>
-      <label for="email-payment" class="label-justify-content"> <input type="text" id="email-payment" class="text-input"
-          placeholder="Email Address">
-        Email</label>
-      <div class="label-justify-content">
-        <button type="button" class="nav-button nav-button-text"> Proceed</button>
+    <div class="element-container label-container">
+      <div class="service-justify-content" id="payment-form">
+        <form>
+          <label for="billing" class="label-justify-content-inputs"> Billing Address <input type="text" id="billing"
+              class="text-input" placeholder="Address">
+          </label>
+          <label for="postal" class="label-justify-content-inputs"> Postal Code <input type="text" id="postal"
+              class="text-input" placeholder="Postal Code">
+          </label>
+          <label for="cardnumber" class="label-justify-content-inputs"> Card Number <input type="text" id="cardnumber"
+              class="text-input" placeholder="Card Number">
+          </label>
+          <label for="ccv" class="label-justify-content-inputs"> CCV <input type="text" id="ccv" class="text-input"
+              placeholder="CCV">
+          </label>
+          <label for="firstname" class="label-justify-content-inputs"> First Name <input type="text" id="firstname"
+              class="text-input" placeholder="First Name">
+          </label>
+          <label for="lastname" class="label-justify-content-inputs"> Last Name <input type="text" id="lastname"
+              class="text-input" placeholder="Last Name">
+          </label>
+        </form>
+
+        <form>
+          <label for="mobile-contract" class="label-justify-content"> <input type="radio" name="Tel"
+              id="mobile-contract"> Mobile
+            <span class="checkmark"></span>
+          </label>
+          <label for="work-contact" class="label-justify-content"> <input type="radio" name="Tel" id="work-contact">
+            Work
+            <span class="checkmark"></span>
+          </label>
+          <label for="home-contact" class="label-justify-content"> <input type="radio" name="Tel" id="home-contact">
+            Home
+            <span class="checkmark"></span>
+          </label>
+        </form>
+
+        <form>
+          <label for="tel-contact" class="label-justify-content-inputs"> Telephone <input type="text" id="tel-contact"
+              class="text-input" placeholder="Contact Number">
+          </label>
+          <label for="email" class="label-justify-content-inputs"> Email <input type="text" id="email"
+              class="text-input" placeholder="Email Address">
+          </label>
+        </form>
+        <div class="label-justify-content" id="payment-button">
+          <a href="https://paypal.com/" class="nav-button nav-button-text">Proceed</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="element-container empty-block"></div>
-<!-- This creates a footer that can contain texts and images -->
-<div class="element-container footer"></div>
+  <div class="element-container empty-block"></div>
+  <!-- This creates a footer that can contain texts and images -->
+  <div class="footer">
+    <p class="justify-footer-content element-container">
+      © 2019 Three Corner Interactives, a company that offer game development service for you.
+    </p>
+  </div>
 </body>
 
 </html>

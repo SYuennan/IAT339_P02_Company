@@ -52,7 +52,7 @@
 
       <h4 class="sub-header-contents">Rendered element:</h4>
       <div class="element-container-col label-container">
-        <div class="label-justify-content">
+        <div class="service-justify-content">
           <button type="button" class="nav-button nav-button-text"> Proceed</button>
         </div>
       </div>
@@ -62,10 +62,10 @@
 
     <section class="container-border">
       <h3 class="sub-header-contents">Submit/Reset Buttons</h3>
+
       <div class="element-container-col label-container">
-        <div class="label-justify-content">
-          <input type="submit" class="submit-reset-button nav-button-text">
-          <input type="reset" class="submit-reset-button nav-button-text">
+        <div class="service-justify-content">
+          <input type="submit" class="submit-reset-button  nav-button-text" value="Send">
         </div>
       </div>
     </section>
@@ -73,18 +73,34 @@
 
     <section class="container-border">
       <h3 class="sub-header-contents">Text Input Field with Label</h3>
-      <div class="element-container-col label-container">
-        <label for="tel" class="label-justify-content"> <input type="text" class="text-input" id="tel" placeholder="Contact Number">Tel</label>
-      </div>
+      <form>
+        <label for="tel-contact" class="label-justify-content-inputs"> Telephone<input type="text" id="tel-contact"
+            class="text-input" placeholder="Contact Number">
+        </label>
+        <label for="email" class="label-justify-content-inputs"> Email <input type="text" id="email"
+            class="text-input" placeholder="Email Address">
+        </label>
+      </form>
     </section>
 
 
     <section class="container-border">
       <h3 class="sub-header-contents">Radio Button with Label</h3>
       <div class="element-container-col label-container">
-        <label for="mobile" class="label-justify-content"> <input type="radio" id="mobile"> Mobile</label>
-        <label for="work" class="label-justify-content"> <input type="radio" id="work"> Work</label>
-        <label for="home" class="label-justify-content"> <input type="radio" id="home"> Home</label>
+        <form>
+          <label for="mobile-contract" class="label-justify-content"> <input type="radio" name="Tel"
+              id="mobile-contract"> Mobile
+            <span class="checkmark"></span>
+          </label>
+          <label for="work-contact" class="label-justify-content"> <input type="radio" name="Tel" id="work-contact">
+            Work
+            <span class="checkmark"></span>
+          </label>
+          <label for="home-contact" class="label-justify-content"> <input type="radio" name="Tel" id="home-contact">
+            Home
+            <span class="checkmark"></span>
+          </label>
+        </form>
       </div>
     </section>
 
@@ -92,21 +108,39 @@
     <section class="element-container container-border">
       <h3 class="sub-header-contents">Image as a Link</h3>
       <div class="project-thumbnail-container">
-        <div>
-          <a href="https://stevenyuennan.wixsite.com/portfolio/game-design"> <img src="Resources/Project-Flower-Thumbnail1.png"
-              class="project-thumbnail" id="project-flower" alt="project-flower-thumbnail"> </a>
+        <div class="imageGrid project-thumbnail-wrapper">
+            <img src="Resources/Project-Flower-Thumbnail3.jpg" class="project-thumbnail" id="project-flower"
+                alt="project-flower-thumbnail">
+            <div class="project-thumbnail-content">
+                <h2 class="header-contents"> Flower Diary </h2>
+                <a href="project-flower.html"> <img
+                        src="Resources/Project-Flower-Thumbnail2.jpg" class="project-thumbnail" id="project-flower-thumbnail"
+                        alt="project-flower-thumbnail"> </a>
+            </div>
         </div>
 
-        <div>
-          <a href="https://stevenyuennan.wixsite.com/portfolio/vr-project"> <img src="Resources/Project-Bunker-Thumbnail1.png"
-              class="project-thumbnail" id="project-bunker" alt="project-bunker-thumbnail"> </a>
+        <div class="imageGrid project-thumbnail-wrapper">
+            <img src="Resources/Project-Bunker-Thumbnail2.png" class="project-thumbnail" id="project-bunker"
+                alt="project-flower-thumbnail">
+            <div class="project-thumbnail-content">
+                <h2 class="header-contents"> Bunker </h2>
+                <a href="project-bunker.html"> <img
+                        src="Resources/Project-Bunker-Thumbnail1.png" class="project-thumbnail" id="project-bunker-thumbnail"
+                        alt="project-flower-thumbnail"> </a>
+            </div>
         </div>
 
-        <div>
-          <a href="https://stevenyuennan.wixsite.com/portfolio/mobile-game"> <img src="Resources/Project-Canvas.png"
-              class="project-thumbnail" id="project-hio" alt="project-hio-thumbnail"> </a>
+        <div class="imageGrid project-thumbnail-wrapper">
+            <img src="Resources/Project-Canvas-thumbnail1.png" class="project-thumbnail" id="project-hio"
+                alt="project-hio-thumbnail">
+            <div class="project-thumbnail-content">
+                <h2 class="header-contents"> Canvas </h2>
+                <a href="project-canvas.html"> <img
+                        src="Resources/Project-Canvas.png" class="project-thumbnail" id="project-hio-thumbnail"
+                        alt="project-hio-thumbnail"> </a>
+            </div>
         </div>
-      </div>
+    </div>
     </section>
 
 
@@ -186,102 +220,159 @@
       </nav>
     </section>
 
-    <section class="container-border">
-      <h3 class="sub-header-contents">Service Listing</h3>
-      <div class="element-container-col label-container">
-        <label class="label-justify-content"> Contract </label>
-        <label class="label-justify-content"> Please note that our prices will scale
-          with the length of the contract </label>
-        <label for="contract-type-1" class="label-justify-content"> <input type="radio" id="contract-type-1"> 1 Year
-          Contract (Starting at $3000)</label>
-        <label for="contract-type-2" class="label-justify-content"> <input type="radio" id="contract-type-2"> 2 - 3
-          Years Contract (Starting at $5000)</label>
-        <label for="contract-type-3" class="label-justify-content"> <input type="radio" id="contract-type-3"> 4
-          Years+ Contract (Starting at $7000)</label>
-        <label class="label-justify-content"> Need a specific specialist? </label>
-        <label for="programmers" class="label-justify-content"> <input type="checkbox" id="programmers"> Programmers</label>
-        <label for="gamedesigners" class="label-justify-content"> <input type="checkbox" id="gamedesigners"> Game
-          Designers</label>
-        <label for="3Dmodellers" class="label-justify-content"> <input type="checkbox" id="3Dmodellers"> 3D Modellers</label>
-        <label for="2DArtists" class="label-justify-content"> <input type="checkbox" id="2DArtists"> 2D Artists</label>
-        <label for="ConceptArtists" class="label-justify-content"> <input type="checkbox" id="ConceptArtists">
-          Concept Artists</label>
-        <label for="Debugger" class="label-justify-content"> <input type="checkbox" id="Debugger"> Debugger</label>
-        <label for="2Danimator" class="label-justify-content"> <input type="checkbox" id="2Danimator"> 2D Animators</label>
-        <label for="3Danimator" class="label-justify-content"> <input type="checkbox" id="3Danimator"> 3D Animators</label>
-
-        <div class="label-justify-content">
-          <button type="button" class="nav-button nav-button-text"> Proceed</button>
+    <section class="service-offer">
+      <h2 class="element-container header-contents">Service</h2>
+      <div class="element-container label-container">
+        <div class="service-justify-content">
+          <h3 class="service-type"> Contract </h3>
+          <label class="label-justify-content"> Please note that our prices will scale
+            with the length of the contract </label>
+          <label for="contract-type-1" class="label-justify-content"> <input type="radio" name="contract" id="contract-type-1"> 1 Year
+            Contract (Starting at $3000)
+            <span class="checkmark"></span>
+          </label>
+          <label for="contract-type-2" class="label-justify-content"> <input type="radio" name="contract" id="contract-type-2"> 2 - 3
+            Years Contract (Starting at $5000)
+            <span class="checkmark"></span>
+          </label>
+          <label for="contract-type-3" class="label-justify-content"> <input type="radio" name="contract" id="contract-type-3"> 4
+            Years+ Contract (Starting at $7000)<span class="checkmark"></span>
+          </label>
         </div>
-        <a href="service.html" class="nav-sample">Service Page Template Sample</a>
+        <div class="service-justify-content">
+          <h3 class="service-type"> Need a specific specialist? </h3>
+          <label for="programmers" class="label-justify-content"> <input type="checkbox" id="programmers"> Programmers
+            <span class="checkmark"></span>
+          </label>
+          <label for="gamedesigners" class="label-justify-content"> <input type="checkbox" id="gamedesigners"> Game
+            Designers
+            <span class="checkmark"></span>
+          </label>
+          <label for="3Dmodellers" class="label-justify-content"> <input type="checkbox" id="3Dmodellers"> 3D Modellers<span class="checkmark"></span>
+          </label>
+          <label for="2DArtists" class="label-justify-content"> <input type="checkbox" id="2DArtists"> 2D Artists
+            <span class="checkmark"></span>
+          
+          </label>
+          <label for="ConceptArtists" class="label-justify-content"> <input type="checkbox" id="ConceptArtists">
+            Concept Artists
+            <span class="checkmark"></span>
+          </label>
+          <label for="Debugger" class="label-justify-content"> <input type="checkbox" id="Debugger"> Debugger
+            <span class="checkmark"></span>
+          </label>
+          <label for="2Danimator" class="label-justify-content"> <input type="checkbox" id="2Danimator"> 2D Animators
+            <span class="checkmark"></span>
+          </label>
+          <label for="3Danimator" class="label-justify-content"> <input type="checkbox" id="3Danimator"> 3D Animators
+            <span class="checkmark"></span>
+          </label>
+    
+         
+        </div>
+    
       </div>
+      <div class="service-type element-container"> 
+          <a href="payment.html" class="nav-button nav-button-text">Proceed</a>
+        </div>
     </section>
 
-    <section class="container-border">
-      <h3 class="sub-header-contents">Contact Form</h3>
-      <div class="element-container-col label-container">
-        <label class="label-justify-content"> Contact </label>
-        <label for="mobile-contact" class="label-justify-content"> <input type="radio" id="mobile-contact"> Mobile</label>
-        <label for="work-contact" class="label-justify-content"> <input type="radio" id="work-contact"> Work</label>
-        <label for="home-contact" class="label-justify-content"> <input type="radio" id="home-contact"> Home</label>
-        <label for="tel-contact" class="label-justify-content"> <input type="text" id="tel-contact" class="text-input"
-            placeholder="Contact Number">
-          Tel</label>
-        <label for="email" class="label-justify-content"> <input type="text" id="email" class="text-input" placeholder="Email Address">
-          Email</label>
-        <label class="label-justify-content"> Questions for us? </label>
-        <div class="label-justify-content">
-          <input type="text" class=" message-box" placeholder="Leave any messages for us here">
+    <section class="service-offer">
+      <h2 class="element-container header-contents">Contact</h2>
+      <div class="element-container label-container">
+        <div class="service-justify-content">
+          <form>
+            <label for="mobile-contract-service" class="label-justify-content"> <input type="radio" name="Tel"
+                id="mobile-contract-service"> Mobile
+              <span class="checkmark"></span>
+            </label>
+            <label for="work-contact-service" class="label-justify-content"> <input type="radio" name="Tel" id="work-contact-service">
+              Work
+              <span class="checkmark"></span>
+            </label>
+            <label for="home-contact-service" class="label-justify-content"> <input type="radio" name="Tel" id="home-contact-service">
+              Home
+              <span class="checkmark"></span>
+            </label>
+          </form>
+  
+          <form>
+            <label for="tel-contact-service" class="label-justify-content-inputs"> Telephone<input type="text" id="tel-contact-service"
+                class="text-input" placeholder="Contact Number">
+            </label>
+            <label for="email-service" class="label-justify-content-inputs"> Email <input type="text" id="email-service"
+                class="text-input" placeholder="Email Address">
+            </label>
+            <label class="label-justify-content-inputs"> Questions for us? </label>
+            <div class="label-justify-content-inputs">
+              <textarea class="label-justify-content-inputs" rows="10" cols="50"
+                placeholder="Leave any messages for us here"> </textarea>
+            </div>
+          </form>
+          <div>
+          <input type="submit" class="submit-reset-button  nav-button-text" value="Send">
+          </div>
         </div>
-        <div class="label-justify-content">
-          <input type="submit" class="submit-reset-button nav-button-text">
-        </div>
-        <a href="contact.html" class="nav-sample">Contact Page Template Sample</a>
       </div>
+      
+  
     </section>
 
-    <section class="container-border">
-      <h3 class="sub-header-contents">Payment Form</h3>
-      <div class="element-container-col label-container">
-        <label class="label-justify-content">Billing Address </label>
-        <div class="label-justify-content">
-          <input type="text" class="text-input" placeholder="Address Line 1">
-          <input type="text" class="text-input" placeholder="Address Line 2">
+    <section class="service-offer">
+      <h2 class="element-container header-contents">Payment</h2>
+  
+      <div class="element-container label-container">
+        <div class="service-justify-content" id="payment-form">
+          <form>
+            <label for="billing" class="label-justify-content-inputs"> Billing Address <input type="text" id="billing"
+                class="text-input" placeholder="Address">
+            </label>
+            <label for="postal" class="label-justify-content-inputs"> Postal Code <input type="text" id="postal"
+                class="text-input" placeholder="Postal Code">
+            </label>
+            <label for="cardnumber" class="label-justify-content-inputs"> Card Number <input type="text" id="cardnumber"
+                class="text-input" placeholder="Card Number">
+            </label>
+            <label for="ccv" class="label-justify-content-inputs"> CCV <input type="text" id="ccv" class="text-input"
+                placeholder="CCV">
+            </label>
+            <label for="firstname" class="label-justify-content-inputs"> First Name <input type="text" id="firstname"
+                class="text-input" placeholder="First Name">
+            </label>
+            <label for="lastname" class="label-justify-content-inputs"> Last Name <input type="text" id="lastname"
+                class="text-input" placeholder="Last Name">
+            </label>
+          </form>
+  
+          <form>
+            <label for="mobile-contract-offer" class="label-justify-content"> <input type="radio" name="Tel"
+                id="mobile-contract-offer"> Mobile
+              <span class="checkmark"></span>
+            </label>
+            <label for="work-contact-offer" class="label-justify-content"> <input type="radio" name="Tel" id="work-contact-offer">
+              Work
+              <span class="checkmark"></span>
+            </label>
+            <label for="home-contact-offer" class="label-justify-content"> <input type="radio" name="Tel" id="home-contact-offer">
+              Home
+              <span class="checkmark"></span>
+            </label>
+          </form>
+  
+          <form>
+            <label for="tel-contact-offer" class="label-justify-content-inputs"> Telephone <input type="text" id="tel-contact-offer"
+                class="text-input" placeholder="Contact Number">
+            </label>
+            <label for="email-offer" class="label-justify-content-inputs"> Email <input type="text" id="email-offer"
+                class="text-input" placeholder="Email Address">
+            </label>
+          </form>
+          <div class="label-justify-content" id="payment-button">
+            <a href="https://paypal.com/" class="nav-button nav-button-text">Proceed</a>
+          </div>
         </div>
-        <label for="postalcode" class="label-justify-content">Postal Code </label>
-        <div class="label-justify-content">
-          <input type="text" class="text-input" id="postalcode" placeholder="Postal Code">
-        </div>
-        <div class="label-justify-content">
-          <label for="card-number"> <input type="text" id="card-number" class="text-input" placeholder="Card Number">
-            Card
-            Number</label>
-          <label for="card-ccv"> <input type="text" id="card-ccv" class="text-input" placeholder="CCV"> CCV</label>
-        </div>
-        <label for="first-name" class="label-justify-content"> <input type="text" id="first-name" class="text-input"
-            placeholder="First name">
-          First Name</label>
-        <label for="last-name" class="label-justify-content"> <input type="text" id="last-name" class="text-input"
-            placeholder="Last name">
-          Last Name</label>
-        <div class="label-justify-content">
-          <label for="mobile-payment"> <input type="radio" id="mobile-payment"> Mobile</label>
-          <label for="work-payment"> <input type="radio" id="work-payment"> Work</label>
-          <label for="home-payment"> <input type="radio" id="home-payment"> Home</label>
-        </div>
-        <label for="tel-payment" class="label-justify-content"> <input type="text" id="tel-payment" class="text-input"
-            placeholder="Contact Number">
-          Tel</label>
-        <label for="email-payment" class="label-justify-content"> <input type="text" id="email-payment" class="text-input"
-            placeholder="Email Address">
-          Email</label>
-        <div class="label-justify-content">
-          <button type="button" class="nav-button nav-button-text"> Proceed</button>
-        </div>
-        <a href="payment.html" class="nav-sample">Payment Page Template Sample</a>
       </div>
     </section>
-
   </section>
   <!-- // COMBINED ELEMENTS SECTION -->
   <div class="element-container empty-block"></div>
